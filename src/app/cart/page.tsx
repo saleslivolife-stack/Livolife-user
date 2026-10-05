@@ -43,9 +43,9 @@ export default function CartPage() {
 
       cart.items.forEach((item, index) => {
         messageText += `\n${index + 1}. *${item.name}*\n`;
-        messageText += `   • Quantity : ${item.quantity}\n`;
+        messageText += `   • Quantity: ${item.quantity}\n`;
         // Skip rather than send "N/A" — most items here have neither.
-        if (item.attributes[0]) messageText += `   • Color : ${item.attributes[0]}\n`;
+        if (item.attributes[0]) messageText += `   • Color: ${item.attributes[0]}\n`;
         if (item.attributes[1]) messageText += `   • Size: ${item.attributes[1]}\n`;
         messageText += `   • Price: ₹${Math.round(item.price * item.quantity)}\n`;
         if (item.taxRate) {
@@ -105,7 +105,7 @@ export default function CartPage() {
                 <div className="flex flex-col space-y-5">
                   <div className="flex items-center justify-between">
                     <span className="md:text-xl text-muted-foreground">Subtotal</span>
-                    <span className="md:text-xl font-bold">₹{totalPrice}</span>
+                    <span className="md:text-xl font-bold">₹{Number(totalPrice).toFixed(2)}</span>
                   </div>
                   <div className="flex items-center justify-between">
                     {/* <span className="md:text-xl text-black/60">

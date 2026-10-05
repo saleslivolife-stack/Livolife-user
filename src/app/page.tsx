@@ -4,7 +4,10 @@ import CategoriesSec from "@/components/homepage/CategoriesSec";
 import { Product } from "@/types/product.types";
 import { variantPricing } from "@/lib/pricing";
 
-export const revalidate = 3600;
+// Admin product/category changes rebuild this page on demand via
+// /api/revalidate (called by the backend). This 24h timer is only a safety net
+// in case one of those calls is missed.
+export const revalidate = 86400;
 
 const api = process.env.NEXT_PUBLIC_API_URL;
 

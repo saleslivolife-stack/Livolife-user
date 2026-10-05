@@ -43,12 +43,12 @@ export default function RootLayout({
         <Providers>
           {/* Navbar */}
           <TopNavbar />
-          
+
           {/* Main Content - Grows to fill available space */}
           <main className="flex-1">
             {children}
           </main>
-          
+
           {/* Footer - Always at bottom */}
           <Footer />
         </Providers>
