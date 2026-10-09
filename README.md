@@ -4,7 +4,7 @@
 
 Shopco is an open-source project that converts a Figma design of an e-commerce website into a fully responsive front-end application. It utilizes **Next.js 14 App Router**, **TypeScript**, **Tailwind CSS**, **Redux**, **Framer Motion**, and **ShadCN UI** to deliver a modern, scalable, and optimized solution based on industry standards.
 
-## Table of Contents
+## Table of Contents   
 
 - [Shopco](#shopco)
   - [Table of Contents](#table-of-contents)
@@ -139,7 +139,7 @@ This project is licensed under the MIT License - see the [LICENSE](https://opens
 
 ## Contact
 
-Feel free to reach out to:
+Feel free to reach out to :
 
 - **Name**: Mohammad Oftadeh
 - **Email**: [mr.mohammadoftadeh@gmail.com](mailto:mr.mohammadoftadeh@gmail.com)

@@ -144,7 +144,7 @@ const Header = ({ data }: { data: Product }) => {
         {/* Description */}
         <p className="text-sm sm:text-base text-muted-foreground mb-3 md:mb-5">
           {data.description ||
-            "This product is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style."}
+            "Quality surgical supplies for hospitals, clinics and healthcare professionals — available at wholesale B2B pricing."}
         </p>
 
         <hr className="h-[1px] border-t-black/10 mb-3 md:mb-5" />

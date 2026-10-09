@@ -38,7 +38,7 @@ const ITEMS_PER_PAGE = 12;
 // Skeleton card shown while loading
 const SkeletonCard = () => (
   <div className="flex flex-col items-start animate-pulse">
-    <div className="bg-gray-200 rounded-[13px] lg:rounded-[20px] w-full aspect-square mb-2.5" />
+    <div className="bg-gray-200 rounded-[14px] lg:rounded-[20px] w-full aspect-square mb-2.5 " />
     <div className="h-4 bg-gray-200 rounded w-3/4 mb-1.5" />
     <div className="h-3 bg-gray-200 rounded w-1/2 mb-2" />
     <div className="h-5 bg-gray-200 rounded w-1/3" />
@@ -231,7 +231,7 @@ const ShopProductsList = () => {
               ))}
               {totalPages > 5 && (
                 <PaginationItem>
-                  <PaginationEllipsis className="text-muted-foreground font-medium text-sm" />
+                  <PaginationEllipsis className="text-muted-foreground font-medium text-sm " />
                 </PaginationItem>
               )}
             </PaginationContent>
@@ -240,7 +240,7 @@ const ShopProductsList = () => {
               onClick={(e) => { e.preventDefault(); currentPage < totalPages && setCurrentPage(p => p + 1); }}
               className={currentPage === totalPages ? "opacity-50 cursor-not-allowed" : "border border-white/10"}
             />
-          </Pagination>
+          </Pagination>   
         </>
       )}
     </div>

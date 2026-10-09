@@ -24,7 +24,7 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: "Livolife",
-  description: "Livolife — shop clothing and lifestyle essentials you'll be proud to wear.",
+  description: "Livolife — Surgicals B2B Wholesale.",
 };
 
 export const viewport: Viewport = {
